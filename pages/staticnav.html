@@ -70,10 +70,22 @@
         <div class="poll-results" id="pollResults" style="display:none;">
           <div class="success-msg">✔ Submitted successfully!</div>
           <p>Thanks for voting! Here's how others responded:</p>
-          <div class="poll-bar"><div class="poll-fill" id="bar-side"></div> Side nav</div>
-          <div class="poll-bar"><div class="poll-fill" id="bar-top"></div> Top nav</div>
-          <div class="poll-bar"><div class="poll-fill" id="bar-normal"></div> Normal page</div>
-          <div class="poll-bar"><div class="poll-fill" id="bar-none"></div> No preference</div>
+          <div class="poll-bar">
+            <div class="poll-fill" id="bar-side"></div>
+            <span class="poll-label">Side nav</span>
+          </div>
+          <div class="poll-bar">
+            <div class="poll-fill" id="bar-top"></div>
+            <span class="poll-label">Top nav</span>
+          </div>
+          <div class="poll-bar">
+            <div class="poll-fill" id="bar-normal"></div>
+            <span class="poll-label">Normal page</span>
+          </div>
+          <div class="poll-bar">
+            <div class="poll-fill" id="bar-none"></div>
+            <span class="poll-label">No preference</span>
+          </div>
         </div>
       </div>
     </section>
@@ -102,7 +114,7 @@
       for (const key in bars) {
         const percent = total > 0 ? (votes[key] / total) * 100 : 0;
         bars[key].style.width = percent + "%";
-        bars[key].textContent = Math.round(percent) + "%";
+        bars[key].textContent = `${Math.round(percent)}%`;
       }
       form.style.display = "none";
       results.style.display = "block";
