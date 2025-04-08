@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Normal Page</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <nav class="top-nav sticky">
+    <ul class="nav-list">
+      <li><a href="sidescroll.html">Side Scroll</a></li>
+      <li><a href="topscroll.html">Top Scroll</a></li>
+      <li><a href="staticnav.html">Normal Page</a></li>
+    </ul>
+  </nav>
+  <main class="content grid-layout">
+    <section>
+      <h2>Welcome to the Traditional Page</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et dapibus risus. Vestibulum ante ipsum primis in faucibus.</p>
+    </section>
+    <section>
+      <h3>Page Feature: Modal</h3>
+      <div class="modal-box">Use this modal area to break up content visually.</div>
+    </section>
+    <section>
+      <h3>Page Feature: Grid Layout</h3>
+      <div class="grid-box">
+        <div class="grid-item">Left-aligned text block.</div>
+        <div class="grid-item">Right-aligned text block.</div>
+      </div>
+    </section>
+    <section>
+      <h3>Page Feature: Floating Quote</h3>
+      <blockquote class="side-quote">"Quote floated to enhance storytelling impact."</blockquote>
+    </section>
+    <section>
+      <h3>Page Feature: Accordion (Expandable Sections)</h3>
+      <details>
+        <summary>Click to expand for additional content ideas</summary>
+        <p>This section can hold extended explanations, FAQs, or additional detail that users can reveal on demand. It helps reduce visual clutter while keeping information accessible.</p>
+      </details>
+    </section>
+    <section>
+      <h3>Page Feature: Callout Cards</h3>
+      <div class="card-grid">
+        <div class="card">💡 Idea 1: Use visual metaphors to explain your topic.</div>
+        <div class="card">📊 Idea 2: Incorporate charts or data visualizations.</div>
+        <div class="card">🎯 Idea 3: Create clear action prompts or summaries.</div>
+      </div>
+    </section>
+    <section>
+      <h3>Page Feature: Side-by-Side Comparison</h3>
+      <div class="grid-box">
+        <div class="grid-item">
+          <h4>Layout A</h4>
+          <p>This layout uses vertical flow and large sections to guide the user.</p>
+        </div>
+        <div class="grid-item">
+          <h4>Layout B</h4>
+          <p>This layout is modular and ideal for dense, segmented content.</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h3>Page Feature: Highlight Banner</h3>
+      <div class="highlight-banner">
+        ⚠️ Reminder: All layouts should be responsive and accessible.
+      </div>
+    </section>
+  </main>
+  <section class="poll-container">
+    <h3>Poll: Which do you prefer?</h3>
+    <input type="checkbox" id="show-results" />
+
+    <form id="pollForm">
+      <label><input type="radio" name="preference" required> Side nav</label><br>
+      <label><input type="radio" name="preference" required> Top nav</label><br>
+      <label><input type="radio" name="preference" required> Normal page</label><br>
+      <label><input type="radio" name="preference" required> No preference</label><br><br>
+      <div class="poll-submit">
+        <label for="show-results">Submit</label>
+      </div>
+    </form>
+
+    <div class="poll-results">
+      <p>Thank you for voting! Here are the results:</p>
+      <div><strong>Side nav:</strong> <div class="poll-bar" style="width: 35%">35%</div></div>
+      <div><strong>Top nav:</strong> <div class="poll-bar" style="width: 25%">25%</div></div>
+      <div><strong>Normal page:</strong> <div class="poll-bar" style="width: 20%">20%</div></div>
+      <div><strong>No preference:</strong> <div class="poll-bar" style="width: 20%">20%</div></div>
+    </div>
+  </section>
+</body>
+</html>
