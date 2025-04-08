@@ -9,14 +9,16 @@
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
-  <!-- Hidden checkbox to control sidebar visibility -->
+  <!-- Hidden checkbox toggle -->
   <input type="checkbox" id="sidebar-toggle" hidden />
 
-  <!-- Desktop toggle open button -->
-  <label for="sidebar-toggle" class="desktop-sidebar-toggle open">☰</label>
+  <!-- Desktop toggle arrow -->
+  <label for="sidebar-toggle" class="desktop-sidebar-toggle">
+    <span class="arrow-icon">◀</span>
+  </label>
 
+  <!-- Sidebar navigation -->
   <aside class="side-nav">
-    <label for="sidebar-toggle" class="desktop-sidebar-toggle close">⨯</label>
     <nav>
       <ul>
         <li><a href="#page1">Page 1</a></li>
@@ -29,7 +31,7 @@
     </nav>
   </aside>
 
-  <!-- Mobile hamburger menu -->
+  <!-- Mobile hamburger (shown only on small screens) -->
   <label for="sidebar-toggle" class="hamburger">☰</label>
 
   <main class="content">
