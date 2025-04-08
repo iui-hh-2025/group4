@@ -1,4 +1,5 @@
 /* style.css */
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -169,49 +170,95 @@ body {
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
   }
   
-  .poll-container {
-    margin: 2em;
+  .poll-card {
     background: #fff;
-    padding: 1.5em;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: 2em auto;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .poll-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+  }
+  
+  .poll-question {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  .poll-form label {
+    font-size: 1em;
+    padding-left: 0.25em;
+  }
+  
+  .poll-button {
+    margin-top: 1em;
+    background: #2196f3;
+    color: white;
+    padding: 0.6em 1.2em;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
   }
   
   .poll-results {
     display: none;
-    margin-top: 1em;
+    margin-top: 1.5em;
+    animation: fadeIn 0.5s ease-in-out;
   }
   
-  .poll-bar {
-    height: 20px;
-    background-color: #90caf9;
-    margin: 5px 0;
-    border-radius: 4px;
-    color: #000;
-    font-size: 0.85em;
-    line-height: 20px;
-    padding-left: 0.5em;
-  }
-  
-  #show-results {
-    display: none;
-  }
-  
-  #show-results:checked ~ .poll-results {
+  #poll-submit-toggle:checked ~ .poll-results {
     display: block;
   }
   
-  #show-results:checked ~ #pollForm {
+  #poll-submit-toggle:checked ~ .poll-form {
     display: none;
   }
   
-  .poll-submit label {
-    display: inline-block;
-    background: #2196f3;
-    color: white;
-    padding: 0.5em 1em;
-    border-radius: 4px;
-    cursor: pointer;
+  .poll-bar {
+    background-color: #90caf9;
+    border-radius: 5px;
+    margin-bottom: 0.75em;
+    overflow: hidden;
+    position: relative;
+    height: 24px;
+    transition: width 1s ease;
+  }
+  
+  .poll-bar::before {
+    content: "";
+    display: block;
+    height: 100%;
+    background-color: #42a5f5;
+    width: 0;
+    transition: width 1s ease;
+  }
+  
+  #poll-submit-toggle:checked ~ .poll-results .poll-bar::before {
+    width: 100%; /* You can make this dynamic with inline styles if needed */
+  }
+  
+  .empty-bar::after {
+    content: "(no data)";
+    margin-left: 0.5em;
+    font-style: italic;
+    color: #999;
+  }
+  
+  /* Success checkmark */
+  #poll-submit-toggle:checked ~ .poll-results::before {
+    content: "✔ Submitted successfully!";
+    display: block;
+    color: #2e7d32;
+    font-weight: bold;
+    margin-bottom: 1em;
   }
   
   /* Responsive Design */
@@ -258,10 +305,16 @@ body {
       text-align: center;
     }
   
-    .poll-submit label {
+    .poll-submit label,
+    .poll-button {
       display: block;
       width: 100%;
       text-align: center;
     }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
   
