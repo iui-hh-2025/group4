@@ -59,24 +59,69 @@
     <section>
       <h3>Poll: Which do you prefer?</h3>
       <div class="poll-card">
-        <input type="checkbox" id="poll-submit-toggle" hidden />
-        <form class="poll-form">
+        <form class="poll-form" id="pollForm">
           <p class="poll-question">Which layout do you prefer?</p>
-          <label><input type="radio" name="vote" required /> Side nav</label>
-          <label><input type="radio" name="vote" required /> Top nav</label>
-          <label><input type="radio" name="vote" required /> Normal page</label>
-          <label><input type="radio" name="vote" required /> No preference</label>
-          <label for="poll-submit-toggle" class="poll-button">Submit</label>
+          <label><input type="radio" name="vote" value="side" required /> Side nav</label>
+          <label><input type="radio" name="vote" value="top" required /> Top nav</label>
+          <label><input type="radio" name="vote" value="normal" required /> Normal page</label>
+          <label><input type="radio" name="vote" value="none" required /> No preference</label>
+          <button type="submit" class="poll-button">Submit</button>
         </form>
-        <div class="poll-results">
-          <p>Thanks for voting! Here’s how others responded:</p>
-          <div class="poll-bar empty-bar">Side nav</div>
-          <div class="poll-bar empty-bar">Top nav</div>
-          <div class="poll-bar empty-bar">Normal page</div>
-          <div class="poll-bar empty-bar">No preference</div>
+        <div class="poll-results" id="pollResults" style="display:none;">
+          <div class="success-msg">✔ Submitted successfully!</div>
+          <p>Thanks for voting! Here's how others responded:</p>
+          <div class="poll-bar"><div class="poll-fill" id="bar-side"></div> Side nav</div>
+          <div class="poll-bar"><div class="poll-fill" id="bar-top"></div> Top nav</div>
+          <div class="poll-bar"><div class="poll-fill" id="bar-normal"></div> Normal page</div>
+          <div class="poll-bar"><div class="poll-fill" id="bar-none"></div> No preference</div>
         </div>
       </div>
     </section>
   </main>
+  <script>
+    const form = document.getElementById("pollForm");
+    const results = document.getElementById("pollResults");
+    const bars = {
+      side: document.getElementById("bar-side"),
+      top: document.getElementById("bar-top"),
+      normal: document.getElementById("bar-normal"),
+      none: document.getElementById("bar-none")
+    };
+
+    let votes = JSON.parse(localStorage.getItem("pollVotes")) || {
+      side: 0,
+      top: 0,
+      normal: 0,
+      none: 0
+    };
+
+    let hasVoted = localStorage.getItem("pollVoted") === "true";
+
+    function displayResults() {
+      const total = Object.values(votes).reduce((a, b) => a + b, 0);
+      for (const key in bars) {
+        const percent = total > 0 ? (votes[key] / total) * 100 : 0;
+        bars[key].style.width = percent + "%";
+        bars[key].textContent = Math.round(percent) + "%";
+      }
+      form.style.display = "none";
+      results.style.display = "block";
+    }
+
+    if (hasVoted) {
+      displayResults();
+    }
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const choice = form.vote.value;
+      if (!choice) return;
+
+      votes[choice]++;
+      localStorage.setItem("pollVotes", JSON.stringify(votes));
+      localStorage.setItem("pollVoted", "true");
+      displayResults();
+    });
+  </script>
 </body>
 </html>
