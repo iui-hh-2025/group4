@@ -15,10 +15,21 @@ body {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   
+  .center-nav {
+    position: relative;
+    top: auto;
+    box-shadow: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    justify-content: center;
+    background: transparent;
+  }
+  
   .top-nav ul, .scroll-header ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2em;
     margin: 0;
     padding: 0;
   }
@@ -27,16 +38,17 @@ body {
     color: white;
     text-decoration: none;
     padding: 0.5em 1em;
+    background-color: #2196f3;
+    border-radius: 4px;
+    transition: background 0.3s;
   }
   
   .nav-list li a:hover,
   .scroll-header li a:hover,
   .side-nav a:hover {
     background-color: #1976d2;
-    border-radius: 4px;
   }
   
-  /* CSS-only ScrollSpy simulation using :target */
   section:target {
     outline: 3px solid #64b5f6;
     background-color: #e3f2fd;
@@ -109,5 +121,108 @@ body {
     background: #fff;
     padding: 1em;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .highlight-banner {
+    background: #fffde7;
+    border-left: 5px solid #ffeb3b;
+    padding: 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 1em;
+    border-left: 4px solid #2196f3;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .poll-container {
+    margin: 2em;
+    background: #fff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .poll-results {
+    display: none;
+    margin-top: 1em;
+  }
+  
+  .poll-bar {
+    height: 20px;
+    background-color: #90caf9;
+    margin: 5px 0;
+    border-radius: 4px;
+    color: #000;
+    font-size: 0.85em;
+    line-height: 20px;
+    padding-left: 0.5em;
+  }
+  
+  #show-results {
+    display: none;
+  }
+  
+  #show-results:checked ~ .poll-results {
+    display: block;
+  }
+  
+  #show-results:checked ~ #pollForm {
+    display: none;
+  }
+  
+  .poll-submit label {
+    display: inline-block;
+    background: #2196f3;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .grid-layout, .grid-box {
+      grid-template-columns: 1fr;
+    }
+  
+    .content {
+      margin-left: 0;
+    }
+  
+    .side-nav {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .top-nav ul, .scroll-header ul {
+      flex-direction: column;
+      gap: 0.5em;
+    }
+  
+    .grid-layout, .grid-box, .card-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .nav-list li a {
+      text-align: center;
+    }
+  
+    .poll-submit label {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
   }
   
