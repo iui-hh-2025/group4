@@ -9,34 +9,55 @@
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
+  <!-- Hidden checkbox to control sidebar visibility -->
+  <input type="checkbox" id="sidebar-toggle" hidden />
+
+  <!-- Desktop toggle open button -->
+  <label for="sidebar-toggle" class="desktop-sidebar-toggle open">☰</label>
+
   <aside class="side-nav">
+    <label for="sidebar-toggle" class="desktop-sidebar-toggle close">⨯</label>
     <nav>
       <ul>
-        <li><a href="#section1">Section 1</a></li>
-        <li><a href="#section2">Section 2</a></li>
-        <li><a href="#section3">Section 3</a></li>
-        <li><a href="#section4">Section 4</a></li>
+        <li><a href="#page1">Page 1</a></li>
+        <li><a href="#page2">Page 2</a></li>
+        <li><a href="#page3">Page 3</a></li>
+        <li><a href="#page4">Page 4</a></li>
+        <li><a href="#page5">Page 5</a></li>
+        <li><a href="#page6">Optional Page 6</a></li>
       </ul>
     </nav>
   </aside>
+
+  <!-- Mobile hamburger menu -->
+  <label for="sidebar-toggle" class="hamburger">☰</label>
+
   <main class="content">
-    <section id="section1">
-      <h2>Section 1</h2>
+    <section id="page1">
+      <h2>Page 1</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem sem, efficitur nec purus nec, suscipit viverra sem.</p>
     </section>
-    <section id="section2">
-      <h2>Section 2</h2>
+    <section id="page2">
+      <h2>Page 2</h2>
       <blockquote>"This is a floating quote to emphasize important content."</blockquote>
       <p>Phasellus porta arcu sit amet nisi convallis, sed porta enim finibus.</p>
     </section>
-    <section id="section3">
-      <h2>Section 3</h2>
+    <section id="page3">
+      <h2>Page 3</h2>
       <div class="modal-box">Scroll for details inside this modal box section.</div>
       <p>Praesent egestas, nisi vitae commodo pulvinar, nulla velit fermentum orci, sed fringilla magna sem a lacus.</p>
     </section>
-    <section id="section4">
-      <h2>Section 4</h2>
+    <section id="page4">
+      <h2>Page 4</h2>
       <p>Donec congue faucibus arcu a blandit. Cras vel justo sed turpis volutpat congue.</p>
+    </section>
+    <section id="page5">
+      <h2>Page 5</h2>
+      <p>Ut placerat odio sed turpis facilisis, sed commodo mauris tempor. Suspendisse potenti.</p>
+    </section>
+    <section id="page6">
+      <h2>Optional Page 6</h2>
+      <p>This is an optional extended section that users can scroll to if needed for more in-depth or bonus material.</p>
     </section>
   </main>
 </body>
