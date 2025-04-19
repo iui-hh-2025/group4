@@ -38,22 +38,61 @@ body {
   margin-top: 1rem;
 }
 
-/* === BUTTON === */
-.btn {
-  display: inline-block;
-  background: var(--primary-color);
-  color: white;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  border-radius: var(--border-radius);
-  font-weight: bold;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-  transition: background var(--transition-fast), transform var(--transition-fast);
+/* === BUTTON EFFECT (DEMO 281 STYLE) === */
+.wrapper {
+  display: flex;
 }
 
-.btn:hover {
-  background: #1256a1;
-  transform: translateY(-2px);
+.button-effect {
+  margin: auto;
+}
+
+.button-effect.no-js .icon-wrap,
+.button-effect.no-js .text-wrap {
+  transform: none;
+  opacity: 1;
+}
+
+.btn {
+  font-size: 20px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  color: white;
+  background: linear-gradient(#0C8EA3, #54C1E3);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px 0 20px;
+  overflow: hidden;
+}
+
+.icon-wrap {
+  height: 60px;
+  display: flex;
+  margin-left: 10px;
+  transform: translateX(-300%);
+  opacity: 0;
+  transition: all .3s ease-out;
+}
+
+.text-wrap {
+  transform: translateX(25px);
+  opacity: 0;
+  transition: all .3s ease-out;
+  transition-delay: .05s;
+}
+
+.arrow-icon {
+  width: 32px;
+}
+
+.button-effect.in-view .icon-wrap,
+.button-effect.in-view .text-wrap {
+  transform: none;
+  opacity: 1;
 }
 
 /* === INTRO SECTION === */
