@@ -242,6 +242,35 @@ figcaption {
   color: var(--text-muted);
 }
 
+/* === GRID LAYOUT VARIANTS === */
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  gap: 2rem;
+}
+
+.section-grid.reverse {
+  direction: rtl;
+}
+
+.section-grid.reverse > * {
+  direction: ltr;
+}
+
+.section-grid.centered {
+  justify-items: center;
+  text-align: center;
+}
+
+.section-grid .wrapper {
+  justify-self: start;
+}
+
+.section-grid.reverse .wrapper {
+  justify-self: end;
+}
+
 /* === FOOTER === */
 .footer {
   background: #263238;
@@ -258,7 +287,8 @@ figcaption {
   .energy-content,
   .climate-content,
   .balance-columns,
-  .pollution-content {
+  .pollution-content,
+  .section-grid {
     flex-direction: column;
     align-items: center;
   }
@@ -266,5 +296,15 @@ figcaption {
   .image-graphic,
   .image-placeholder {
     width: 100%;
+  }
+
+  .section-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .section-grid .wrapper,
+  .section-grid.reverse .wrapper {
+    justify-self: center;
   }
 }
