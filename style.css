@@ -38,7 +38,7 @@ body {
   margin-top: 1rem;
 }
 
-/* === BUTTON EFFECT (DEMO 281 STYLE) === */
+/* === BUTTON EFFECT === */
 .wrapper {
   display: flex;
 }
@@ -202,7 +202,7 @@ body {
   margin-top: 1rem;
 }
 
-/* === QUOTE DEMO === */
+/* === QUOTE SECTION === */
 .quote-section {
   background: var(--bg-card);
   padding: 4rem 1.5rem;
@@ -269,6 +269,62 @@ figcaption {
 
 .section-grid.reverse .wrapper {
   justify-self: end;
+}
+
+/* === GROUP MEMBERS SECTION === */
+.group-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* === CONTRIBUTIONS SECTION === */
+.contributions-section {
+  background: #ffffff;
+  padding: 3rem 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contributions-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.contributions-section ul {
+  padding-left: 1.25rem;
+  line-height: 1.75;
+  color: var(--text-dark);
+}
+
+/* === CITATION SECTION === */
+.citation-section {
+  background: var(--bg-card);
+  padding: 3rem 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.citation-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.citation-section ul {
+  padding-left: 1.25rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.citation-section em {
+  font-style: italic;
+}
+
+.citation-section li {
+  margin-bottom: 1rem;
 }
 
 /* === FOOTER === */
