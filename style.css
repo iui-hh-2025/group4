@@ -246,8 +246,6 @@ section {
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  height: 56px;
 }
 
 .nav-logo img {
@@ -266,14 +264,14 @@ section {
 }
 
 .nav-link {
+  display: block;
+  color: var(--secondary-dark);
   font-size: 18px;
   font-weight: 600;
-  color: var(--secondary-dark);
   padding: 0.5rem 1.25rem;
   border-radius: 0px;
-  transition: background 0.2s, color 0.2s;
-  display: block;
   background: none;
+  text-decoration: none;
 }
 
 .nav-link.active {
@@ -289,7 +287,7 @@ section {
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1.5rem;
 }
 
 footer {
@@ -420,5 +418,82 @@ footer {
   .hero-secondary .hero-overlay {
     max-width: 95vw;
     padding: 0 0.5rem;
+  }
+}
+
+.ai-section {
+  padding: 4rem 2rem 3rem 2rem;
+  background: var(--primary-light);
+  text-align: center;
+}
+
+.ai-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--black);
+}
+
+.ai-subtitle {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 0 0 1.5rem 0;
+  color: var(--black);
+}
+
+.ai-desc {
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+  font-size: 1.25rem;
+  color: var(--black);
+}
+
+.ai-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.ai-card {
+  background: var(--white);
+  box-shadow: 0 1px 3px 1px rgba(0,0,0,0.15), 0 1px 2px 0 rgba(0,0,0,0.3);
+  padding: 2.5rem 2rem 2rem 2rem;
+  min-width: 300px;
+  max-width: 350px;
+  flex: 1 1 300px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.ai-card h4 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 0 0 1rem 0;
+  color: var(--black);
+}
+
+.ai-card p {
+  font-size: 1.15rem;
+  color: var(--black);
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .ai-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .ai-card {
+    max-width: 95vw;
+    min-width: 0;
+    width: 100%;
+    align-items: center;
+    text-align: center;
   }
 }
