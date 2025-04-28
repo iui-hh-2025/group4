@@ -686,6 +686,7 @@ footer {
 .energy-section .section-grid {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   gap: 4rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -694,6 +695,18 @@ footer {
 .energy-section .content-block {
   flex: 1;
   max-width: 600px;
+}
+
+.energy-section .image-block {
+  flex: 0 0 auto;
+  max-width: 34.375rem;
+}
+
+.energy-section .section-img {
+  width: 100%;
+  height: 22.375rem;
+  object-fit: cover;
+  border-radius: var(--border-radius);
 }
 
 .energy-section h2 {
@@ -707,18 +720,6 @@ footer {
   line-height: 1.6;
   margin: 0 0 2rem 0;
   color: var(--white);
-}
-
-.energy-section .image-block {
-  flex: 1;
-}
-
-.energy-section .section-img {
-  width: 100%;
-  max-width: 550px;
-  height: 358px;
-  object-fit: cover;
-  border-radius: var(--border-radius);
 }
 
 /* Button Styles */
@@ -797,13 +798,17 @@ footer {
     max-width: 100%;
   }
 
-  .energy-section h2 {
-    font-size: 3em;
+  .energy-section .image-block {
+    max-width: 100%;
   }
 
   .energy-section .section-img {
-    max-width: 100%;
-    height: 358px;
+    max-width: 34.375rem;
+    margin: 0 auto;
+  }
+
+  .energy-section h2 {
+    font-size: 3em;
   }
 }
 
