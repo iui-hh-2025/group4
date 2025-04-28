@@ -1,3 +1,3 @@
-# Site Layout Demo
+Website under construction.
 
-Demo site under construction.
+Check back later.
