@@ -16,7 +16,7 @@
   --white: #FFFFFF;
   --black: #000000;
 
-  --border-radius: 8px;
+  --border-radius: 0px;
   --transition-fast: 0.3s ease-in-out;
 }
 
@@ -254,7 +254,7 @@ section {
   font-weight: 600;
   color: var(--secondary-dark);
   padding: 0.5rem 1.25rem;
-  border-radius: 6px;
+  border-radius: 0px;
   transition: background 0.2s, color 0.2s;
   display: block;
   background: none;
