@@ -10,6 +10,29 @@
 </head>
 <body>
 
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="../index.html" class="nav-logo">
+          <img src="../images/group-4-favicon.png" alt="Logo">
+        </a>
+        <a href="../index.html" class="nav-link">Home</a>
+      </div>
+      <button class="hamburger" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-right">
+        <li><a href="energy.html" class="nav-link">Energy</a></li>
+        <li><a href="pollution.html" class="nav-link">Pollution</a></li>
+        <li><a href="climate.html" class="nav-link">Climate</a></li>
+        <li><a href="conclusion.html" class="nav-link">Balance</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <header class="hero-secondary">
     <div class="hero-overlay">
       <h1>AI for Climate</h1>
@@ -90,6 +113,21 @@
   <footer class="footer">
     <p>&copy; 2025 AI & Our Earth. IUI-HH Group 4. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Hamburger menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      var hamburger = document.querySelector('.hamburger');
+      var navbar = document.querySelector('.navbar');
+      if (hamburger && navbar) {
+        hamburger.addEventListener('click', function() {
+          navbar.classList.toggle('open');
+          var expanded = hamburger.getAttribute('aria-expanded') === 'true';
+          hamburger.setAttribute('aria-expanded', !expanded);
+        });
+      }
+    });
+  </script>
 
 </body>
 </html>

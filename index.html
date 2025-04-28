@@ -17,6 +17,11 @@
         </a>
         <a href="index.html" class="nav-link">Home</a>
       </div>
+      <button class="hamburger" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <ul class="nav-right">
         <li><a href="pages/energy.html" class="nav-link">Energy</a></li>
         <li><a href="pages/pollution.html" class="nav-link">Pollution</a></li>
@@ -44,15 +49,15 @@
     <div class="ai-cards">
       <div class="ai-card">
         <h4>Machine Learning</h4>
-        <p>Add paragraph text. Click “Edit Text” to update the font, size and more. To change and reuse text themes, go to Site Styles.</p>
+        <p>Add paragraph text. Click "Edit Text" to update the font, size and more. To change and reuse text themes, go to Site Styles.</p>
       </div>
       <div class="ai-card">
         <h4>Deep Learning</h4>
-        <p>Add paragraph text. Click “Edit Text” to update the font, size and more. To change and reuse text themes, go to Site Styles.</p>
+        <p>Add paragraph text. Click "Edit Text" to update the font, size and more. To change and reuse text themes, go to Site Styles.</p>
       </div>
       <div class="ai-card">
         <h4>Generative AI</h4>
-        <p>Add paragraph text. Click “Edit Text” to update the font, size and more. To change and reuse text themes, go to Site Styles.</p>
+        <p>Add paragraph text. Click "Edit Text" to update the font, size and more. To change and reuse text themes, go to Site Styles.</p>
       </div>
     </div>
   </section>
@@ -210,6 +215,18 @@
   </footer>
 
   <script>
+    // Hamburger menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      var hamburger = document.querySelector('.hamburger');
+      var navbar = document.querySelector('.navbar');
+      if (hamburger && navbar) {
+        hamburger.addEventListener('click', function() {
+          navbar.classList.toggle('open');
+          var expanded = hamburger.getAttribute('aria-expanded') === 'true';
+          hamburger.setAttribute('aria-expanded', !expanded);
+        });
+      }
+    });
     document.querySelectorAll('.button-effect').forEach(wrapper => {
       wrapper.classList.remove('no-js');
       const observer = new IntersectionObserver(entries => {
