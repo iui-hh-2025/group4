@@ -363,3 +363,46 @@ footer {
     text-align: center;
   }
 }
+
+.hero-secondary {
+  background: var(--white);
+  padding: 4rem 1rem 3rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid var(--primary-light);
+}
+
+.hero-secondary .hero-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.hero-secondary h1 {
+  margin: 0;
+  font-size: 4rem;
+  color: var(--secondary-dark);
+  text-align: center;
+}
+
+.hero-secondary p {
+  font-size: 1.5rem;
+  color: var(--secondary);
+  text-align: center;
+  margin: 0.5rem 0 0 0;
+}
+
+@media (max-width: 900px) {
+  .hero-secondary h1 {
+    font-size: 2.5rem;
+  }
+  .hero-secondary .hero-overlay {
+    max-width: 95vw;
+    padding: 0 0.5rem;
+  }
+}
