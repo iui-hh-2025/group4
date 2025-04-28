@@ -138,6 +138,23 @@ section {
   align-items: center;
 }
 
+.bio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.bio-card {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
 .image-placeholder, .image-graphic {
   width: 100%;
   height: 200px;
