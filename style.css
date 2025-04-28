@@ -153,6 +153,18 @@ section {
   background: var(--light-greige);
 }
 
+.section-secondary h2 {
+  color: var(--white);
+}
+
+.contribution-section li {
+  font-size: 24px;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
 /* ========== COMPONENTS ========== */
 .button-effect {
   display: inline-flex;
@@ -211,6 +223,7 @@ section {
     0 1px 2px 0 rgba(0,0,0,0.3);
   max-width: 300px;
 }
+
 
 .navbar {
   background-color: #AEC09A;
@@ -274,7 +287,6 @@ section {
   color: var(--secondary-dark);
 }
 
-/* Remove old nav-left styles */
 .nav-left { display: none; }
 
 footer {
