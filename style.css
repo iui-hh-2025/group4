@@ -357,6 +357,10 @@ footer {
   .hero-img {
     max-width: 120px;
   }
+  .hero-overlay h1 {
+    line-height: 1.25;
+    margin-bottom: 1.5rem;
+  }
 }
 
 @media (max-width: 900px) {
@@ -499,7 +503,7 @@ footer {
   }
   .ai-card {
     max-width: 45vw;
-    min-width: 260px;
+    min-width: 260px; 
   }
 }
 
@@ -510,7 +514,7 @@ footer {
     gap: 1.25rem;
   }
   .ai-card {
-    max-width: 95vw;
+    max-width: 75vw;
     min-width: 0;
     width: 100%;
     align-items: center;
