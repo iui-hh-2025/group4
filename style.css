@@ -713,12 +713,12 @@ footer {
   flex: 1;
 }
 
-.energy-section .image-placeholder {
+.energy-section .section-img {
   width: 100%;
   max-width: 550px;
   height: 358px;
-  background: var(--light-greige);
-  border-radius: 4px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
 }
 
 /* Button Styles */
@@ -801,9 +801,9 @@ footer {
     font-size: 3em;
   }
 
-  .energy-section .image-placeholder {
+  .energy-section .section-img {
     max-width: 100%;
-    height: 300px;
+    height: 358px;
   }
 }
 
@@ -820,7 +820,7 @@ footer {
     font-size: 1.1em;
   }
 
-  .energy-section .image-placeholder {
-    height: 250px;
+  .energy-section .section-img {
+    height: 358px;
   }
 }
