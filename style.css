@@ -286,7 +286,11 @@ section {
   color: var(--secondary-dark);
 }
 
-.nav-left { display: none; }
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
 footer {
   background: var(--primary);
