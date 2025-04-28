@@ -436,9 +436,10 @@ footer {
 }
 
 .ai-title {
-  font-size: 2.5em;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
+  font-size: 3.5em;
+  font-weight: 400;
+  line-height: auto;
+  justify-self: center;
   color: var(--black);
 }
 
@@ -481,11 +482,10 @@ footer {
 }
 
 .ai-card h4 {
-  font-size: 1.2em;
-  font-weight: 600;
-  margin: 0 0 1rem 0;
+  font-size: 2em;
+  font-weight: 400;
+  line-height: auto;
   color: var(--black);
-  text-align: center;
 }
 
 .ai-card p {
