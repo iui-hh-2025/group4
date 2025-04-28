@@ -443,6 +443,7 @@ footer p {
   font-weight: 400;
   margin: 0 0 1.5rem 0;
   color: var(--black);
+  text-align: center;
 }
 
 .ai-desc {
@@ -450,6 +451,7 @@ footer p {
   margin: 0 auto 3rem auto;
   font-size: 1.25rem;
   color: var(--black);
+  text-align: center;
 }
 
 .ai-cards {
@@ -467,24 +469,26 @@ footer p {
   min-width: 300px;
   max-width: 350px;
   flex: 1 1 300px;
-  text-align: left;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
 }
 
 .ai-card h4 {
-  font-size: 2.5rem;
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 600;
   margin: 0 0 1rem 0;
   color: var(--black);
+  text-align: center;
 }
 
 .ai-card p {
   font-size: 1.15rem;
   color: var(--black);
   margin: 0;
+  text-align: center;
 }
 
 @media (max-width: 900px) {
