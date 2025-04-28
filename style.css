@@ -672,48 +672,25 @@ footer {
   line-height: 1.6;
 }
 
+@media (max-width: 1200px) {
+  .timeline-item {
+    padding-inline: 8rem;
+  }
+}
+
 @media (max-width: 900px) {
   .timeline-item {
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 1.5rem;
-  }
-
-  .timeline-image {
-    flex: 0 0 auto;
-    width: 100%;
-    max-width: 360px;
-  }
-
-  .timeline-img {
-    height: 320px;
-  }
-
-  .section-desc {
-    margin-bottom: 3rem;
+    padding-inline: 2rem;
   }
 }
 
 @media (max-width: 600px) {
-  .timeline-section {
-    padding: 3rem 1rem;
-  }
-
-  .timeline-cards {
-    gap: 2rem;
-  }
-
-  .timeline-img {
-    height: 320px;
-  }
-
-  .timeline-content h3 {
-    font-size: 1.75em;
-  }
-
-  .timeline-content p {
-    font-size: 1.1em;
+  .timeline-item {
+    padding-inline: 1rem;
   }
 }
 
