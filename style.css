@@ -42,14 +42,14 @@ h2 {
   font-weight: 400;
   line-height: auto;
   justify-self: center;
-  color: var(--secondary);
+  color: var(--black);
 }
 
 h3 {
   font-size: 40px;
   font-weight: 400;
   line-height: auto;
-  color: var(--secondary);
+  color: var(--black);
 }
 
 p {
@@ -124,7 +124,7 @@ nav a {
 
 .hero-overlay p {
   font-size: 1.5rem;
-  color: var(--secondary);
+  color: var(--black);
   text-align: right;
   margin: 0.5rem 0 0 0;
 }
@@ -297,7 +297,7 @@ footer {
   color: var(--black);
   text-align: center;
   padding: 2rem 1rem;
-  font-size: 0.9rem;
+  font-size: 0.5rem;
 }
 
 /* ========== GRID ========== */
