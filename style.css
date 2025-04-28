@@ -79,12 +79,8 @@ nav a {
 /* ========== LAYOUT ========== */
 .hero {
   background: var(--primary-light);
-  padding: 5rem 1rem;
+  padding: 3rem 1rem;
   text-align: center;
-}
-
-.hero-overlay h1 {
-  margin: 0;
 }
 
 .hero-overlay p {
