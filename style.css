@@ -216,7 +216,11 @@ section {
 }
 
 .button-primary {
-  background-color: #AEC09A;
+  background-color: var(--primary-light);
+}
+
+.button-primary:hover {
+  background-color: var(--primary);
 }
 
 .button-secondary {
@@ -583,7 +587,7 @@ footer {
   width: 28px;
   height: 3px;
   margin: 4px 0;
-  background: var(--secondary-dark);
+  background: var(--black);
   border-radius: 2px;
   transition: 0.3s;
 }
@@ -796,7 +800,11 @@ footer {
 }
 
 .button-primary {
-  background-color: #AEC09A;
+  background-color: var(--primary-light);
+}
+
+.button-primary:hover {
+  background-color: var(--primary);
 }
 
 .button-secondary {
