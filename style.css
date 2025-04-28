@@ -78,7 +78,7 @@ nav a:hover {
 /* ========== LAYOUT ========== */
 .hero {
   background: var(--white);
-  padding: 4rem 1rem 7rem 1rem;
+  padding: 7rem 1rem 7rem 1rem;
   text-align: left;
   border-bottom: 1px solid var(--primary-light);
 }
@@ -165,29 +165,64 @@ section {
 }
 
 /* ========== COMPONENTS ========== */
-.button-effect {
+.button-wrapper {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: var(--secondary);
-  color: var(--white);
-  font-size: 1.125em;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0 1.5rem;
+  height: 36px;
+  min-width: 50px;
+  border-radius: 18px;
+  font-size: 1rem;
   font-weight: 500;
-  border-radius: 30px;
-  padding: 0.75rem 2rem;
-  text-transform: uppercase;
-  letter-spacing: 2%;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transition: background var(--transition-fast);
 }
 
-.button-effect:hover {
-  background: var(--secondary-dark);
+.button:active {
+  transform: translateY(2px);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-.btn {
-  all: unset;
-  display: flex;
+.button-text {
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.button-icon {
+  display: inline-flex;
   align-items: center;
+  margin-top: 1px;
+}
+
+.button-icon svg {
+  width: 14px;
+  height: 14px;
+  stroke-width: 2;
+}
+
+.button-primary {
+  background-color: #AEC09A;
+}
+
+.button-secondary {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+.button-secondary:hover {
+  background-color: var(--secondary-dark);
 }
 
 .bio-grid {
@@ -310,9 +345,11 @@ footer {
 .pollution-content,
 .section-grid {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  width: 100%;
 }
 
 .section-grid.reverse {
@@ -437,13 +474,13 @@ footer {
 .ai-title {
   font-size: 3.5em;
   font-weight: 400;
-  line-height: auto;
+  margin: 0 auto;
   justify-self: center;
   color: var(--black);
 }
 
 .ai-subtitle {
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 400;
   margin: 0 0 1.5rem 0;
   color: var(--black);
@@ -772,6 +809,15 @@ footer {
   background-color: #AEC09A;
 }
 
+.button-secondary {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+.button-secondary:hover {
+  background-color: var(--secondary-dark);
+}
+
 @media (max-width: 1024px) {
   .energy-section .section-grid {
     gap: 3rem;
@@ -828,4 +874,56 @@ footer {
   .energy-section .section-img {
     height: 358px;
   }
+}
+
+/* About page list styling */
+.contributions-section {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.contributions-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.contributions-section li {
+  font-size: 1.5em;
+  margin: 1.5rem 0;
+  padding: 0 1rem;
+  line-height: 1.4;
+}
+
+.citation-section {
+  padding: 4rem 2rem;
+  background-color: var(--color-light);
+}
+
+.citation-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.citation-section p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.citation-section ul {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  list-style-type: none;
+}
+
+.citation-section li {
+  margin: 1.5rem 0;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.citation-section li em {
+  font-style: italic;
 }
