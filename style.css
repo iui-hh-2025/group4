@@ -41,6 +41,7 @@ h2 {
   font-size: 64px;
   font-weight: 400;
   line-height: auto;
+  justify-self: center;
   color: var(--secondary);
 }
 
