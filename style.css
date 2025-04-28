@@ -908,17 +908,26 @@ footer {
   font-style: italic;
 }
 
+.pollution-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.pollution-section h2 {
+  margin-bottom: 3rem;
+}
+
 .pollution-items {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin: 2rem auto;
   max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .pollution-item {
-  text-align: center;
-  max-width: 355px;
+  text-align: left;
 }
 
 .pollution-item img {
@@ -937,10 +946,44 @@ footer {
   margin: 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .pollution-items {
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
+    gap: 1.5rem;
+    padding: 0;
+  }
+  
+  .pollution-item img {
+    height: 280px;
+  }
+}
+
+@media (max-width: 900px) {
+  .pollution-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .pollution-items {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pollution-section {
+    padding: 2rem 1rem;
+  }
+
+  .pollution-items {
+    grid-template-columns: 1fr;
+    max-width: 355px;
+    gap: 2.5rem;
+  }
+
+  .pollution-item img {
+    height: 320px;
+  }
+
+  .pollution-section h2 {
+    margin-bottom: 2rem;
   }
 }
