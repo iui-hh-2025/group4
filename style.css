@@ -265,9 +265,9 @@ section {
 
 .nav-link {
   display: block;
-  color: var(--secondary-dark);
+  color: var(--black);
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   padding: 0.5rem 1.25rem;
   border-radius: 0px;
   background: none;
@@ -296,6 +296,10 @@ footer {
   text-align: center;
   padding: 2rem 1rem;
   font-size: 0.5rem;
+}
+
+footer p {
+  font-size: 12px;
 }
 
 /* ========== GRID ========== */
