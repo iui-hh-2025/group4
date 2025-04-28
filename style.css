@@ -78,27 +78,9 @@ nav a {
 
 /* ========== LAYOUT ========== */
 .hero {
-  background: var(--white);
-  padding: 2.5rem 1rem 1.5rem 1rem;
-  text-align: left;
-  border-bottom: 1px solid var(--primary-light);
-}
-
-.hero-overlay {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.hero-img {
-  max-width: 180px;
-  width: 100%;
-  height: auto;
-  margin-bottom: 0.5rem;
+  background: var(--primary-light);
+  padding: 5rem 1rem;
+  text-align: center;
 }
 
 .hero-overlay h1 {
