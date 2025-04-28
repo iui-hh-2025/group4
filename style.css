@@ -908,29 +908,36 @@ footer {
   font-style: italic;
 }
 
-.pollution-section {
+section.pollution-section {
   padding: 4rem 2rem;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+section.pollution-section > h2 {
+  margin-bottom: 3rem;
   text-align: center;
 }
 
-.pollution-section h2 {
-  margin-bottom: 3rem;
-}
-
-.pollution-items {
+section.pollution-section .pollution-items {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 2rem;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-.pollution-item {
+section.pollution-section .pollution-item {
   text-align: left;
+  width: 100%;
+  display: block;
 }
 
-.pollution-item img {
+section.pollution-section .pollution-item img {
+  display: block;
   width: 100%;
   max-width: 355px;
   height: 320px;
@@ -938,52 +945,52 @@ footer {
   margin-bottom: 1.5rem;
 }
 
-.pollution-item h3 {
+section.pollution-section .pollution-item h3 {
   margin: 0 0 1rem 0;
 }
 
-.pollution-item p {
+section.pollution-section .pollution-item p {
   margin: 0;
 }
 
 @media (max-width: 1200px) {
-  .pollution-items {
+  section.pollution-section .pollution-items {
     gap: 1.5rem;
     padding: 0;
   }
   
-  .pollution-item img {
+  section.pollution-section .pollution-item img {
     height: 280px;
   }
 }
 
 @media (max-width: 900px) {
-  .pollution-section {
+  section.pollution-section {
     padding: 3rem 1.5rem;
   }
 
-  .pollution-items {
-    grid-template-columns: repeat(2, 1fr);
+  section.pollution-section .pollution-items {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     max-width: 750px;
   }
 }
 
 @media (max-width: 600px) {
-  .pollution-section {
+  section.pollution-section {
     padding: 2rem 1rem;
   }
 
-  .pollution-items {
-    grid-template-columns: 1fr;
+  section.pollution-section .pollution-items {
+    grid-template-columns: minmax(0, 1fr);
     max-width: 355px;
     gap: 2.5rem;
   }
 
-  .pollution-item img {
+  section.pollution-section .pollution-item img {
     height: 320px;
   }
 
-  .pollution-section h2 {
+  section.pollution-section h2 {
     margin-bottom: 2rem;
   }
 }
