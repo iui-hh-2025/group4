@@ -78,7 +78,7 @@ nav a {
 
 /* ========== LAYOUT ========== */
 .hero {
-  background: var(--primary-light);
+  background: var(--white);
   padding: 4rem 1rem 3rem 1rem;
   text-align: left;
   border-bottom: 1px solid var(--primary-light);
@@ -131,6 +131,10 @@ nav a {
 
 section {
   padding: 4rem 1.5rem;
+}
+
+.section-secondary {
+  background: var(--secondary);
 }
 
 .section-light {
@@ -202,7 +206,6 @@ section {
 .intro-item, .card {
   background: var(--white);
   padding: 2rem;
-  border-radius: var(--border-radius);
   box-shadow:
     0 1px 3px 1px rgba(0,0,0,0.15),
     0 1px 2px 0 rgba(0,0,0,0.3);
