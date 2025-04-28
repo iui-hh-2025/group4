@@ -116,7 +116,7 @@ nav a {
 .hero-overlay h1 {
   margin: 0;
   font-size: 5em;
-  color: var(--secondary-dark);
+  color: var(--secondary);
   text-align: left;
   text-wrap: auto;
 }
