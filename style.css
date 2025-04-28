@@ -170,6 +170,63 @@ section {
   max-width: 300px;
 }
 
+.navbar {
+  background-color: var(--primary);
+  padding: 0.5rem 1.5rem;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-logo img {
+  height: 40px;
+}
+
+.nav-link {
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--black);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: var(--primary-light);
+}
+
+.nav-right {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.nav-right li a {
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--black);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.nav-right li a:hover {
+  background-color: var(--primary-light);
+}
+
 footer {
   background: var(--primary);
   color: var(--black);
