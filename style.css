@@ -79,20 +79,40 @@ nav a {
 /* ========== LAYOUT ========== */
 .hero {
   background: var(--primary-light);
-  padding: 5rem 1rem;
-  text-align: center;
+  padding: 4rem 1rem 3rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--primary-light);
+}
+
+.hero-overlay {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero-img {
+  max-width: 340px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+  display: block;
 }
 
 .hero-overlay h1 {
   margin: 0;
+  font-size: 3.5rem;
   color: var(--secondary-dark);
-  text-align: center;
+  text-align: left;
 }
 
 .hero-overlay p {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--secondary);
-  text-align: center;
+  text-align: left;
   margin: 0.5rem 0 0 0;
 }
 
@@ -170,12 +190,14 @@ section {
   background: var(--white);
   padding: 2rem;
   border-radius: var(--border-radius);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  box-shadow:
+    0 1px 3px 1px rgba(0,0,0,0.15),
+    0 1px 2px 0 rgba(0,0,0,0.3);
   max-width: 300px;
 }
 
 .navbar {
-  background-color: var(--primary);
+  background-color: #AEC09A;
   padding: 0;
   position: sticky;
   top: 0;
@@ -223,11 +245,17 @@ section {
   border-radius: 6px;
   transition: background 0.2s, color 0.2s;
   display: block;
+  background: none;
 }
 
-.nav-link.active, .nav-link:hover {
-  background: var(--primary-dark);
-  color: var(--white);
+.nav-link.active {
+  background: none;
+  color: var(--secondary-dark);
+}
+
+.nav-link:hover {
+  background: #DFE5D7;
+  color: var(--secondary-dark);
 }
 
 /* Remove old nav-left styles */
@@ -295,5 +323,20 @@ footer {
   }
   .hero-img {
     max-width: 120px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-overlay {
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 95vw;
+    padding: 0 0.5rem;
+  }
+  .hero-img {
+    max-width: 180px;
+  }
+  .hero-overlay h1, .hero-overlay p {
+    text-align: center;
   }
 }
