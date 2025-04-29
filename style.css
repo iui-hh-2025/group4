@@ -302,7 +302,7 @@ section {
 
 .quote-section .quote-source {
   font-size: 1.25em;
-  color: var(--secondary);
+  color: var(--black);
   text-align: center;
   margin: 0 auto;
 }
@@ -311,10 +311,11 @@ section {
   position: relative;
   padding: 8rem 2rem;
   text-align: center;
-  background: url('../images/climate-img-placeholder.png') center/cover no-repeat;
+  background: url('images/climate-img-placeholder.png') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 600px;
 }
 
 .climate-section::before {
@@ -332,12 +333,14 @@ section {
   background: var(--white);
   padding: 4rem 3rem;
   max-width: 600px;
+  width: 90%;
   margin: 0 auto;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .climate-card h2 {
   margin: 0 0 1.5rem 0;
+  font-size: 2.8em;
 }
 
 .climate-card p {
@@ -350,32 +353,39 @@ section {
   margin-top: 2rem;
 }
 
-@media (max-width: 768px) {
-  .quote-section {
-    padding: 4rem 1.5rem;
+@media (max-width: 900px) {
+  .climate-section {
+    padding: 6rem 1.5rem;
+    min-height: 500px;
   }
 
-  .quote-section p {
-    font-size: 2em;
-    padding: 0 1rem;
-    line-height: 1.4;
+  .climate-card {
+    padding: 3rem 2rem;
   }
 
-  .quote-section img.quote-icon {
-    width: 56px;
-    height: 56px;
-    margin-bottom: 2rem;
+  .climate-card h2 {
+    font-size: 2.4em;
   }
 }
 
-@media (max-width: 480px) {
-  .quote-section p {
-    font-size: 1.75em;
+@media (max-width: 600px) {
+  .climate-section {
+    padding: 4rem 1rem;
+    min-height: 400px;
   }
 
-  .quote-section img.quote-icon {
-    width: 48px;
-    height: 48px;
+  .climate-card {
+    padding: 2rem 1.5rem;
+    width: 95%;
+  }
+
+  .climate-card h2 {
+    font-size: 2em;
+    margin-bottom: 1rem;
+  }
+
+  .climate-card p {
+    font-size: 1.1em;
     margin-bottom: 1.5rem;
   }
 }
@@ -1005,7 +1015,7 @@ footer {
 }
 
 .citation-section {
-  padding: 4rem 2rem;
+  padding: 1rem 2rem;
   background-color: var(--color-light);
 }
 
