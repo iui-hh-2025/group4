@@ -26,7 +26,6 @@ html, body {
   width: 100%;
   max-width: 100vw;
   position: relative;
-  padding-top: 56px;
 }
 
 body {
@@ -545,7 +544,7 @@ footer {
 
 .hero-secondary {
   background: var(--primary-light);
-  padding: 4rem 1rem;
+  padding: 10rem 1rem 5rem 1rem;
   text-align: center;
 }
 
