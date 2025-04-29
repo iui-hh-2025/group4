@@ -606,7 +606,7 @@ footer {
   margin: 0 auto 3rem auto;
   font-size: 1.5rem;
   color: var(--black);
-  text-align: center;
+  text-align: justify;
 }
 
 .ai-cards {
