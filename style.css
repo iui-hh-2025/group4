@@ -315,7 +315,6 @@ section {
   justify-content: center;
   align-items: center;
   min-height: 600px;
-  z-index: 1;
 }
 
 .climate-section::before {
@@ -325,8 +324,8 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('images/climate-img-placeholder.png') center/cover no-repeat;
-  z-index: -2;
+  background: url('../images/climate-img-placeholder.png') center/cover no-repeat;
+  z-index: 0;
 }
 
 .climate-section::after {
@@ -336,8 +335,8 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.9);
-  z-index: -1;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 1;
 }
 
 .climate-card {
@@ -348,6 +347,7 @@ section {
   width: 90%;
   margin: 0 auto;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  z-index: 2;
 }
 
 .climate-card h2 {
@@ -1230,6 +1230,7 @@ section.pollution-section .pollution-item p {
   max-width: 1200px;
   margin: 0 auto;
   align-items: center;
+  padding: 0 1rem;
 }
 
 .balance-card {
@@ -1238,10 +1239,14 @@ section.pollution-section .pollution-item p {
   border-radius: var(--border-radius);
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   text-align: center;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .balance-card h3 {
   margin: 0 0 1rem 0;
+  font-size: 2em;
 }
 
 .balance-card p {
@@ -1271,6 +1276,7 @@ section.pollution-section .pollution-item p {
 
   .balance-card {
     padding: 2.5rem 2rem;
+    max-width: 100%;
   }
 
   .balance-image {
