@@ -1251,10 +1251,10 @@ section.pollution-section .pollution-item p {
 }
 
 .balance-image {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
+  width: 361px;
+  height: 241px;
   margin: 0 auto;
+  object-fit: contain;
 }
 
 .button-wrapper {
@@ -1274,7 +1274,9 @@ section.pollution-section .pollution-item p {
   }
 
   .balance-image {
-    max-width: 300px;
+    width: 100%;
+    max-width: 361px;
+    height: 241px;
     order: -1;
   }
 }
