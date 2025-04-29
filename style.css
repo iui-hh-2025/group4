@@ -36,39 +36,40 @@ body {
 }
 
 /* ========== TYPOGRAPHY ========== */
+h1, h2, h3, p {
+  color: var(--black);
+  margin: 0 0 1rem 0;
+}
+
 h1 {
-  font-size: 6.5em;
+  font-size: 5em;
   font-weight: 800;
   letter-spacing: 4%;
   line-height: 1.13;
-  color: var(--secondary);
 }
 
 h2 {
   font-size: 2.8em;
   font-weight: 400;
-  line-height: auto;
-  justify-self: center;
-  color: var(--black);
+  line-height: 1.2;
 }
 
 h3 {
   font-size: 2em;
   font-weight: 400;
-  line-height: auto;
-  color: var(--black);
+  line-height: 1.3;
 }
 
 p {
   font-size: 1.5em;
   font-weight: 400;
-  line-height: 160%;
-  color: var(--black);
+  line-height: 1.6;
 }
 
 a {
   color: var(--secondary);
   text-decoration: none;
+  transition: color var(--transition-fast);
 }
 
 nav a {
@@ -86,7 +87,7 @@ nav a:hover {
 /* ========== LAYOUT ========== */
 .hero {
   background: var(--white);
-  padding: 7rem 1rem 7rem 1rem;
+  padding: 7rem 1rem;
   text-align: left;
   border-bottom: 1px solid var(--primary-light);
 }
@@ -108,17 +109,12 @@ nav a:hover {
   width: 100%;
   height: auto;
   flex-shrink: 0;
-  display: block;
   object-fit: contain;
 }
 
 .hero-text-block {
   flex: 1;
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  text-align: left;
 }
 
 .hero-overlay h1 {
@@ -137,7 +133,7 @@ nav a:hover {
 }
 
 section {
-  padding: 4rem 1.5rem;
+  padding: 4rem 2rem;
   max-width: 100%;
   box-sizing: border-box;
 }
@@ -165,7 +161,8 @@ section {
   background: var(--light-greige);
 }
 
-.section-secondary h2 {
+.section-secondary h2,
+.section-secondary p {
   color: var(--white);
 }
 
@@ -199,7 +196,7 @@ section {
   border: none;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: background var(--transition-fast);
+  transition: all var(--transition-fast);
 }
 
 .button:active {
@@ -227,6 +224,7 @@ section {
 
 .button-primary {
   background-color: var(--primary-light);
+  color: var(--black);
 }
 
 .button-primary:hover {
@@ -389,7 +387,7 @@ section {
 }
 
 .navbar {
-  background-color: #AEC09A;
+  background-color: var(--primary);
   padding: 0;
   position: sticky;
   top: 0;
@@ -401,8 +399,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 1rem;
-  padding-right: 2rem;
+  padding: 0 2rem;
   height: 56px;
 }
 
@@ -436,18 +433,11 @@ section {
   font-size: 1.125em;
   font-weight: 500;
   padding: 0.5rem 1.25rem;
-  border-radius: 0px;
-  background: none;
-  text-decoration: none;
-}
-
-.nav-link.active {
-  background: none;
-  color: var(--secondary-dark);
+  transition: background var(--transition-fast);
 }
 
 .nav-link:hover {
-  background: #DFE5D7;
+  background: var(--primary-light);
   color: var(--secondary-dark);
 }
 
@@ -460,10 +450,9 @@ footer {
   background: var(--primary);
   color: var(--black);
   text-align: center;
-  padding: .1rem .1rem;
+  padding: .1rem;
   font-size: 0.9rem;
 }
-
 
 /* ========== GRID ========== */
 .intro-columns,
@@ -513,7 +502,7 @@ footer {
 
 @media (max-width: 600px) {
   .nav-container {
-    padding: 0 0.5rem;
+    padding: 0 1rem;
   }
   .hero-overlay {
     max-width: 95vw;
@@ -552,20 +541,13 @@ footer {
 
 .hero-secondary {
   background: var(--primary-light);
-  padding: 4rem 1rem 3rem 1rem;
+  padding: 4rem 1rem;
   text-align: center;
-  border-bottom: 1px solid var(--primary-light);
 }
 
 .hero-secondary .hero-overlay {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
   max-width: 900px;
-  margin: 0 auto;
-  width: 100%;
   text-align: center;
 }
 
@@ -625,25 +607,17 @@ footer {
 }
 
 .ai-cards {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2.5rem;
   margin-top: 2.5rem;
-  flex-wrap: wrap;
 }
 
 .ai-card {
   background: var(--white);
-  box-shadow: 0 1px 3px 1px rgba(0,0,0,0.15), 0 1px 2px 0 rgba(0,0,0,0.3);
-  padding: 2.5rem 2rem 2rem 2rem;
-  min-width: 300px;
-  max-width: 350px;
-  flex: 1 1 300px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding: 2.5rem 2rem;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
 }
 
 .ai-card h4 {
@@ -707,7 +681,7 @@ footer {
   margin: 4px 0;
   background: var(--black);
   border-radius: 2px;
-  transition: 0.3s;
+  transition: var(--transition-fast);
 }
 
 @media (max-width: 900px) {
@@ -716,12 +690,10 @@ footer {
     position: absolute;
     top: 56px;
     right: 0;
-    background: #AEC09A;
+    background: var(--primary);
     flex-direction: column;
     width: 100vw;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
     padding: 1rem 0;
-    z-index: 150;
   }
   .navbar.open .nav-right {
     display: flex;
@@ -736,7 +708,6 @@ footer {
 
 .timeline-section {
   text-align: center;
-  padding: 4rem 2rem;
 }
 
 .timeline-section h2 {
@@ -750,9 +721,8 @@ footer {
 }
 
 .timeline-cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -776,7 +746,7 @@ footer {
   width: 100%;
   height: 320px;
   object-fit: cover;
-  border-radius: var(--border-radius);
+  margin-bottom: 1.5rem;
 }
 
 .timeline-content {
