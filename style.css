@@ -52,6 +52,7 @@ h2 {
   font-size: 2.8em;
   font-weight: 400;
   line-height: 1.2;
+  text-align: center;
 }
 
 h3 {
@@ -317,10 +318,7 @@ section {
 }
 
 .climate-section::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.7);
+  display: none;
 }
 
 .climate-card {
@@ -393,6 +391,7 @@ section {
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  width: 100%;
 }
 
 .nav-container {
@@ -450,7 +449,7 @@ footer {
   background: var(--primary);
   color: var(--black);
   text-align: center;
-  padding: .1rem;
+  padding: 1rem;
   font-size: 0.9rem;
 }
 
@@ -1276,16 +1275,16 @@ section.pollution-section .pollution-item p {
   padding: 6rem 2rem;
   text-align: center;
   background: var(--light-greige);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .user-interaction h2 {
-  color: var(--black);
   margin-bottom: 2rem;
   text-align: center;
 }
 
 .user-interaction p {
-  color: var(--black);
   max-width: 800px;
   margin: 0 auto 1rem;
   text-align: center;
@@ -1302,9 +1301,10 @@ section.pollution-section .pollution-item p {
   .user-interaction {
     padding: 4rem 1.5rem;
   }
-
+  
   .user-interaction p {
     font-size: 1.1em;
+    padding: 0 1rem;
   }
 }
 
