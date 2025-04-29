@@ -1301,3 +1301,45 @@ section.pollution-section .pollution-item p {
     padding: 2rem 1.5rem;
   }
 }
+
+.user-interaction {
+  padding: 6rem 2rem;
+  text-align: center;
+  background: var(--light-greige);
+}
+
+.user-interaction h2 {
+  color: var(--black);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.user-interaction p {
+  color: var(--black);
+  max-width: 800px;
+  margin: 0 auto 1rem;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.user-interaction .placeholder-text {
+  color: var(--secondary);
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .user-interaction {
+    padding: 4rem 1.5rem;
+  }
+
+  .user-interaction p {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-interaction {
+    padding: 3rem 1rem;
+  }
+}
