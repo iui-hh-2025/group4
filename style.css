@@ -1218,14 +1218,15 @@ section.pollution-section .pollution-item p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 361px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .balance-image {
   width: 361px;
   height: 241px;
   object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 
 .button-wrapper {
