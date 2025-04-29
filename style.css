@@ -315,28 +315,14 @@ section {
   justify-content: center;
   align-items: center;
   min-height: 600px;
-}
-
-.climate-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   background: url('../images/climate-img-placeholder.png') center/cover no-repeat;
-  z-index: 0;
 }
 
 .climate-section::after {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background: rgba(255, 255, 255, 0.7);
-  z-index: 1;
 }
 
 .climate-card {
@@ -347,7 +333,7 @@ section {
   width: 90%;
   margin: 0 auto;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  z-index: 2;
+  z-index: 1;
 }
 
 .climate-card h2 {
@@ -1217,6 +1203,7 @@ section.pollution-section .pollution-item p {
 .balance-section {
   padding: 6rem 2rem;
   text-align: center;
+  background: var(--white);
 }
 
 .balance-section h2 {
@@ -1234,7 +1221,7 @@ section.pollution-section .pollution-item p {
 }
 
 .balance-card {
-  background: var(--white);
+  background: var(--light-greige);
   padding: 3rem 2rem;
   border-radius: var(--border-radius);
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -1255,10 +1242,16 @@ section.pollution-section .pollution-item p {
   line-height: 1.6;
 }
 
+.balance-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .balance-image {
   width: 361px;
   height: 241px;
-  margin: 0 auto;
   object-fit: contain;
 }
 
@@ -1283,7 +1276,6 @@ section.pollution-section .pollution-item p {
     width: 100%;
     max-width: 361px;
     height: 241px;
-    order: -1;
   }
 }
 
@@ -1297,6 +1289,15 @@ section.pollution-section .pollution-item p {
   }
 
   .balance-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .climate-section {
+    padding: 4rem 1rem;
+    min-height: 400px;
+  }
+
+  .climate-card {
     padding: 2rem 1.5rem;
   }
 }
