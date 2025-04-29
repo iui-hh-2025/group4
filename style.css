@@ -276,8 +276,105 @@ section {
   text-align: center;
 }
 
+.quote-section {
+  background: var(--light-greige);
+  padding: 6rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote-section .quote-icon {
+  width: 68px;
+  height: 68px;
+  margin-bottom: 2rem;
+  object-fit: contain;
+}
+
 .quote-section p {
-  padding-inline: 10rem;
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+  font-size: 2.5em;
+  line-height: 1.3;
+}
+
+.quote-section .quote-source {
+  font-size: 1.25em;
+  color: var(--secondary);
+}
+
+.climate-section {
+  position: relative;
+  padding: 8rem 2rem;
+  text-align: center;
+  background: url('../images/climate-img-placeholder.png') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.climate-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.climate-card {
+  position: relative;
+  background: var(--white);
+  padding: 4rem 3rem;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.climate-card h2 {
+  margin: 0 0 1.5rem 0;
+}
+
+.climate-card p {
+  margin: 0 0 2rem 0;
+  font-size: 1.25em;
+  line-height: 1.6;
+}
+
+.climate-card .button-wrapper {
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .quote-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .quote-section p {
+    font-size: 2em;
+    padding: 0 1rem;
+    line-height: 1.4;
+  }
+
+  .quote-section .quote-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote-section p {
+    font-size: 1.75em;
+  }
+
+  .quote-section .quote-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .navbar {
@@ -1036,4 +1133,58 @@ section.pollution-section .pollution-item p {
 .pollution-section .button-wrapper {
   text-align: center;
   margin-top: 3rem;
+}
+
+.topic-section {
+  background: var(--light-greige);
+  padding: 6rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topic-section h2 {
+  margin-bottom: 2rem;
+  max-width: 12ch;
+  line-height: 1.2;
+}
+
+.topic-section p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.5em;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .topic-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .topic-section h2 {
+    font-size: 2.4em;
+    margin-bottom: 1.5rem;
+  }
+
+  .topic-section p {
+    font-size: 1.25em;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .topic-section {
+    padding: 3rem 1rem;
+  }
+
+  .topic-section h2 {
+    font-size: 2em;
+    margin-bottom: 1.25rem;
+  }
+
+  .topic-section p {
+    font-size: 1.1em;
+    padding: 0;
+  }
 }
