@@ -464,17 +464,15 @@ footer {
 /* ========== GRID ========== */
 .intro-columns,
 .timeline-cards,
-.energy-content,
-.climate-content,
-.balance-columns,
-.pollution-content,
-.section-grid {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+.ai-cards,
+.bio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2em;
+  max-width: 1100px;
+  margin: 2em auto 0 auto;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .section-grid.reverse {
@@ -484,11 +482,8 @@ footer {
 @media (max-width: 768px) {
   .intro-columns,
   .timeline-cards,
-  .energy-content,
-  .climate-content,
-  .balance-columns,
-  .pollution-content,
-  .section-grid {
+  .ai-cards,
+  .bio-grid {
     flex-direction: column;
     align-items: center;
   }
@@ -722,36 +717,23 @@ footer {
 }
 
 .timeline-cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2em;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 2em auto 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.card {
+.timeline-item, .card {
   background: var(--white);
   box-shadow: 0 1px 3px 1px rgba(0,0,0,0.15), 0 1px 2px 0 rgba(0,0,0,0.3);
-  padding: 2rem;
-  max-width: 300px;
-  width: 100%;
+  padding: 2em 1.25em;
   text-align: center;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.timeline-item {
-  flex: 1;
-  max-width: 360px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .timeline-image {
@@ -1313,5 +1295,46 @@ section.pollution-section .pollution-item p {
 @media (max-width: 480px) {
   .user-interaction {
     padding: 3rem 1rem;
+  }
+}
+
+/* Unified card styles */
+.intro-item,
+.card,
+.timeline-item,
+.bio-card,
+.ai-card,
+.balance-card {
+  background: var(--white);
+  box-shadow: 0 1px 3px 1px rgba(0,0,0,0.15), 0 1px 2px 0 rgba(0,0,0,0.3);
+  padding: 2em 1.25em;
+  text-align: center;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .intro-columns,
+  .timeline-cards,
+  .ai-cards,
+  .bio-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25em;
+    max-width: 95vw;
+  }
+  .intro-item,
+  .card,
+  .timeline-item,
+  .bio-card,
+  .ai-card,
+  .balance-card {
+    padding: 1.25em 0.5em;
+    max-width: 95vw;
   }
 }
