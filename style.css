@@ -445,6 +445,8 @@ section {
 .nav-logo {
   display: flex;
   align-items: center;
+  padding: 0em;
+  
 }
 
 .nav-logo:hover {
@@ -634,7 +636,7 @@ footer {
   font-size: 1.25rem;
   color: var(--black);
   text-align: justify;
-  padding: inherit;
+  padding: 0em 2em;
 }
 
 .ai-cards {
