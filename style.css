@@ -803,7 +803,7 @@ footer {
 /* Energy Section Styles */
 .energy-section {
   padding: 5rem 2rem;
-  color: var(--white);
+  color: var(--black);
 }
 
 .energy-section .section-grid {
