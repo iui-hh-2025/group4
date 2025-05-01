@@ -67,8 +67,9 @@
     <section class="energy-section">
       <h2>The Power Struggle</h2>
       <div class="energy-content">
-        <div class="image-placeholder"><img src= "../images/power_image.jpg"></div>
+        <div class="image-placeholder"></div>
         <div class="text-block">
+            <img src= "../images/power_image.jpg">
             <p>Electricity consumption comes in two different forms in AI data centers. The first is how much energy it takes to power the infrastructure of the center itself and the second is how much it takes to run the IT that handles the AI models. Because of how much energy it takes to run these data centers, there is something called an ideal PUE that they aim for to ensure that the centers are as environmentally friendly as possible. Specifically, data centers aim to have a PUE of 1.0 or lower and this PUE is measured by dividing the total data center energy consumption by the IT equipment energy consumption. While 1.0 is the goal that these data centers aim to achieve, most centers have a PUE of 1.6. On a data center with the average PUE of 1.6, the "IT equipment electricity consumption accounts for nearly 2/3, and the cooling system electricity consumption accounts for about ¼" of the electricity consumption (Jia, 2024).  </p>
             <p>When it comes to exactly how much electricity it takes to run AI systems, there are multiple different factors that need to be examined. The first is what stage the AI is in. This is because training an AI system takes far more power than AI does after deployment. For models like ChatGPT 3, it takes just under 1,300 megawatt hours of energy to train the models which is about as much energy consumed by 130 homes in the US a year. For ChatGPT 4, it is almost 50 times as much to train this newer model (AI and Energy, 2024).  This means that to train ChatGPT 4, it can consume the amount of energy that 6,500 homes in the US consume in a single year. </p>
             <p>When the AI model is no longer in training, it uses significantly less energy. However, it being in deployment means that there are other new factors that influence the energy consumption. These factors are visitor and request volume, answer length, program complexity, and model size. A less complex model could still consume the same amount of energy that a more complex model does if the simpler model has greater traffic or is, in general, a larger program. While the consumption of energy during the deployment phase is much smaller than the consumption during the training phase, it is still a large amount of energy as even after training is over, the PUE of the data centers still sit around 1.6.</p>
@@ -76,9 +77,9 @@
         </div>
     </section>
 
-    <section class="water-section">
+    <section class="energy-section">
       <h2>The Water AI Drinks</h2>
-      <div class="water-content">
+      <div class="energy-content">
         <div class="image-placeholder"><img src= "../images/water_image"></div>
         <div class="text-block">
           <p>The water consumption of AI tools is also an area of concern as even the smallest request made via AI sources like ChatGPT or Copilot can consume absurd amounts of water. This water consumption is not just limited to the cooling of the data centers and servers that AI models operate from but also from supply chain demands and hydro-electric withdrawals to help run those very data centers.  </p>
@@ -114,9 +115,8 @@
 
     <!-- Interactive/Infographic Section -->
     <section class="user-interaction">
-      <h2>Explore Energy Usage</h2>
-      <p>Use the interactive dashboard below to explore AI's energy consumption patterns and water usage.</p>
-      <p class="placeholder-text">(Interactive dashboard coming soon. Real-time data visualization will be available.)</p>
+      <h2>What is Water Withdrawal Vs Water Consumption?</h2>
+      <img src =>
     </section>
   </main>
 
@@ -129,11 +129,6 @@
       <li>Li, C., Patterson, D., & Zou, J. (2023). Large language models can be pretty thirsty: A first-of-its-kind study on the water footprint of ChatGPT and other AI models. <em>Nature Machine Intelligence</em>.</li>
     </ul>
   </section>
-
-  <aside>
-    <h3>Water Withdrawl VS Water Consumption</h3>
-      <p>Water withdrawal is the amount of fresh water taken from natural sources (ponds, lakes, underground reservoirs) either temporarily or permanently. Water consumption is water withdrawal subtracted from water discharge (evaporation, use on crops, etc) and reflects the impact on natural water resources.</p>
-  </aside>
 
   <footer class="footer">
     <p>&copy; 2025 AI & Our Earth. IUI-HH Group 4. All rights reserved.</p>
