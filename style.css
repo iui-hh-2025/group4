@@ -639,13 +639,18 @@ footer {
   padding: 0em 2em;
 }
 
-.ai-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+.ai-cards,
+.timeline-cards,
+.pollution-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2em;
+  width: 100%;
   max-width: 1100px;
   margin: 2em auto 0 auto;
-  width: 100%;
+  box-sizing: border-box;
 }
 
 .ai-card {
