@@ -521,6 +521,7 @@ footer {
   .hero-overlay h1 {
     line-height: 1.25;
     margin-bottom: 1.5rem;
+    font-size: 4em;
   }
 }
 
@@ -543,6 +544,9 @@ footer {
   }
   .hero-overlay h1, .hero-overlay p {
     text-align: center;
+  }
+  .hero-overlay h1 {
+    font-size: 5em;
   }
 }
 
@@ -787,7 +791,7 @@ footer {
 
 @media (max-width: 1200px) {
   .timeline-cards {
-    padding: 0 2rem;
+    padding: 0rem;
   }
 }
 
@@ -796,7 +800,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
-    padding: 0 1.5rem;
+    padding: 0rem;
   }
 
   .timeline-item {
