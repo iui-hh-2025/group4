@@ -83,14 +83,16 @@ nav a, .nav-link {
   color: var(--black);
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100%;
   box-sizing: border-box;
+  padding: 0 1.25rem;
+  transition: background var(--transition-fast);
 }
 
 nav a:hover, .nav-link:hover {
   background: #DFE5D7;
   color: var(--secondary-dark);
-  height: 100%;
 }
 
 .nav-right {
@@ -107,6 +109,12 @@ nav a:hover, .nav-link:hover {
   display: flex;
   align-items: center;
   height: 56px;
+}
+
+.nav-right li {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
 }
 
 /* ========== LAYOUT ========== */
