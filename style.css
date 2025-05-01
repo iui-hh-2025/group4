@@ -292,6 +292,10 @@ section {
   box-shadow: 0 2px 5px rgba(0,0,0,0.08);
 }
 
+.bio-card h3 {
+  margin: 0 auto;
+}
+
 .image-placeholder, .image-graphic {
   width: auto;
   height: auto;
@@ -413,7 +417,7 @@ section {
   }
 
   .climate-card p {
-    font-size: 1.1em;
+    font-size: 1.25em;
     margin-bottom: 1.5rem;
   }
 }
@@ -598,7 +602,7 @@ footer {
   }
   .hero-secondary .hero-overlay {
     max-width: 95vw;
-    padding: 0 0.5rem;
+    padding: 0rem;
   }
 }
 
@@ -677,7 +681,7 @@ footer {
     max-width: 95vw;
   }
   .ai-card {
-    padding: 1.25em 0.5em;
+    padding: 2em 1.5em;
   }
 }
 
@@ -1290,7 +1294,7 @@ section.pollution-section .pollution-item p {
     margin-bottom: 1.5em;
   }
   .balance-card {
-    padding: 1.25em 0.75em;
+    padding: 2em 1.5em;
   }
   .balance-image {
     max-width: 95vw;
