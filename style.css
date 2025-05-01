@@ -550,6 +550,21 @@ footer {
   }
 }
 
+@media (max-width: 600px) {
+  .hero-overlay {
+    max-width: 95vw;
+    padding: 0 0.5rem;
+  }
+  .hero-img {
+    max-width: 120px;
+  }
+  .hero-overlay h1 {
+    font-size: 4em;
+    line-height: 1.25;
+    margin-bottom: 1.5rem;
+  }
+}
+
 .hero-secondary {
   background: var(--primary-light);
   padding: 10rem 1rem 5rem 1rem;
