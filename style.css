@@ -803,11 +803,6 @@ footer {
 /* Energy Section Styles */
 .energy-section {
   padding: 5rem 2rem;
-  color: var(--black);
-  img {
-    width: 100%;
-    height: auto;
-  }
 }
 
 .energy-section .section-grid {
