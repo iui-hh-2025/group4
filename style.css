@@ -695,6 +695,7 @@ footer {
     flex-direction: column;
     width: 100vw;
     padding: 1rem 0;
+    height: fit-content;
   }
   .navbar.open .nav-right {
     display: flex;
@@ -941,7 +942,7 @@ footer {
   }
 
   .energy-section h2 {
-    font-size: 3.5em;
+    font-size: 3em;
   }
 }
 
@@ -972,6 +973,7 @@ footer {
 
   .energy-section h2 {
     font-size: 3em;
+    text-align: center;
   }
 }
 
@@ -982,11 +984,12 @@ footer {
 
   .energy-section h2 {
     font-size: 2.5em;
+    text-align: center;
   }
 
   .energy-section p {
     font-size: 1.1em;
-    color:#000000;
+    color:var(--white);
   }
 
   .energy-section .section-img {
