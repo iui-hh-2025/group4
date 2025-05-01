@@ -26,6 +26,7 @@ html, body {
   width: 100%;
   max-width: 100vw;
   position: relative;
+  font-size: 16px;
 }
 
 body {
@@ -102,7 +103,7 @@ nav a:hover, .nav-link:hover {
   margin: 0;
   padding: 0;
   gap: 0.5rem;
-  height: 56px;
+
 }
 
 .nav-left {
@@ -692,6 +693,7 @@ footer {
     width: 100%;
     padding: 1rem 0;
     z-index: 1001;
+    height: fit-content;
   }
   .navbar.open .nav-right {
     display: flex;
@@ -991,7 +993,7 @@ footer {
 
   .energy-section p {
     font-size: 1.1em;
-    color:#000000;
+    color:var(--white);
   }
 
   .energy-section .section-img {
@@ -1360,4 +1362,96 @@ section.pollution-section .pollution-item p {
     padding: 1.25em 0.5em;
     max-width: 95vw;
   }
+}
+
+.balance-cta-section .button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2em 0;
+}
+
+@media (max-width: 700px) {
+  section,
+  .hero,
+  .ai-section,
+  .balance-section,
+  .about-section {
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+  }
+  h1 {
+    font-size: 2.2em;
+    line-height: 1.1;
+    margin-bottom: 0.5em;
+  }
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.75em;
+  }
+  h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+  }
+  p, .ai-desc {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .button {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1em;
+  }
+  .button-wrapper {
+    width: 100%;
+    justify-content: center;
+    margin: 1.5em 0;
+  }
+  .intro-item,
+  .card,
+  .timeline-item,
+  .bio-card,
+  .ai-card,
+  .balance-card {
+    padding: 1em 0.5em;
+    margin: 0 auto 1.5em auto;
+    max-width: 95vw;
+  }
+  .intro-item img,
+  .card img,
+  .timeline-item img,
+  .bio-card img,
+  .ai-card img,
+  .balance-card img {
+    display: block;
+    margin: 0 auto 1em auto;
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+/* Ensure all cards and text are centered and have consistent spacing */
+.intro-item,
+.card,
+.timeline-item,
+.bio-card,
+.ai-card,
+.balance-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 2em auto;
+}
+
+.intro-item h2, .card h2, .timeline-item h2, .bio-card h2, .ai-card h2, .balance-card h2,
+.intro-item h3, .card h3, .timeline-item h3, .bio-card h3, .ai-card h3, .balance-card h3 {
+  margin-bottom: 0.5em;
+}
+
+.intro-item p, .card p, .timeline-item p, .bio-card p, .ai-card p, .balance-card p {
+  margin-bottom: 1em;
 }
