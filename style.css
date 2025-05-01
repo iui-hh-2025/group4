@@ -76,16 +76,37 @@ a {
   transition: color var(--transition-fast);
 }
 
-nav a {
+nav a, .nav-link {
   font-size: 1.5em;
   font-weight: 500;
   letter-spacing: 4%;
   color: var(--black);
+  display: flex;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
 }
 
-nav a:hover {
+nav a:hover, .nav-link:hover {
   background: #DFE5D7;
   color: var(--secondary-dark);
+  height: 100%;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0.5rem;
+  height: 56px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  height: 56px;
 }
 
 /* ========== LAYOUT ========== */
@@ -422,34 +443,6 @@ section {
   height: 32px;
   width: 32px;
   margin-right: 0.5rem;
-}
-
-.nav-right {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 0.5rem;
-}
-
-.nav-link {
-  display: block;
-  color: var(--black);
-  font-size: 1.125em;
-  font-weight: 500;
-  padding: 0.5rem 1.25rem;
-  transition: background var(--transition-fast);
-}
-
-.nav-link:hover {
-  background: var(--primary-light);
-  color: var(--secondary-dark);
-}
-
-.nav-left {
-  display: flex;
-  align-items: center;
 }
 
 footer {
