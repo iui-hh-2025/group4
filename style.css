@@ -631,7 +631,7 @@ footer {
 }
 
 .ai-desc {
-  max-width: 600px;
+  max-width: 1100px;
   margin: 0 auto 3rem auto;
   font-size: 1.25rem;
   color: var(--black);
@@ -748,7 +748,7 @@ footer {
 }
 
 .section-desc {
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto 4rem auto;
   text-align: center;
 }
