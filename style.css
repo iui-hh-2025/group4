@@ -1104,7 +1104,7 @@ section.pollution-section .pollution-items {
 }
 
 section.pollution-section .pollution-item {
-  text-align: left;
+  text-align: center;
   width: 100%;
   display: block;
 }
