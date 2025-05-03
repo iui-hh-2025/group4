@@ -631,11 +631,11 @@ footer {
 }
 
 .ai-desc {
-  /*max-width: 600px;*/
+  max-width: 600px;
   margin: 0 auto 3rem auto;
   font-size: 1.25rem;
   color: var(--black);
-  text-align: justify;
+  text-align: center;
   padding: 0em 2em;
 }
 
