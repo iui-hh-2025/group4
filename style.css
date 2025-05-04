@@ -1443,3 +1443,12 @@ section.pollution-section .pollution-item p {
     min-height: 300px;
   }
 }
+
+.pagesummary img {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 1em auto;
+  display: block;
+  padding: 1em;
+}
