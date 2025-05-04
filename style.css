@@ -684,7 +684,6 @@ footer {
 .intro-climate-p {
   text-align: center;
   font-size: 1.50rem;
-  padding: 1em;
   line-height: 1.5;
 }
 
@@ -1123,7 +1122,7 @@ footer {
 }
 
 section.pollution-section {
-  padding: 4rem 2rem;
+  padding: 1rem;
   text-align: center;
   width: 100%;
   display: block;
@@ -1412,7 +1411,7 @@ section.pollution-section .pollution-item p {
     font-size: 2em;
   }
   .pagesummary p {
-    font-size: 1.1em;
+    font-size: 1.25em;
   }
 }
 
@@ -1424,7 +1423,7 @@ section.pollution-section .pollution-item p {
     font-size: 1.75em;
   }
   .pagesummary p {
-    font-size: 1em;
+    font-size: 1.25em;
   }
 }
 
