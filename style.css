@@ -1129,6 +1129,7 @@ section.pollution-section {
 section.pollution-section > h2 {
   margin-bottom: 3rem;
   text-align: center;
+  margin-top: 1rem;
 }
 
 section.pollution-section .pollution-items {
@@ -1148,7 +1149,7 @@ section.pollution-section .pollution-item {
 }
 
 section.pollution-section .pollution-item img {
-  display: block;
+  display: none;
   width: 100%;
   max-width: 355px;
   height: 320px;
