@@ -677,14 +677,15 @@ footer {
   text-align: center;
 }
 
-.climate p {
-  padding: inherit;
+.climate-p {
+  padding: 1em;
 }
 
-.intro-climate p {
+.intro-climate-p {
   text-align: center;
   font-size: 1.50rem;
-  padding: 0 1em;
+  padding: 1em;
+  line-height: 1.5;
 }
 
 @media (max-width: 700px) {
