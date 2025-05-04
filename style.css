@@ -1385,3 +1385,47 @@ section.pollution-section .pollution-item p {
     padding: 3rem 1rem;
   }
 }
+
+.pagesummary {
+  max-width: 1060px;
+  margin: 1.5em auto;
+  padding: 0 1em;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .pagesummary {
+    padding: 0 0.5em;
+  }
+  .pagesummary h2 {
+    font-size: 2em;
+  }
+  .pagesummary p {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 600px) {
+  .pagesummary {
+    padding: 0 0.25em;
+  }
+  .pagesummary h2 {
+    font-size: 1.75em;
+  }
+  .pagesummary p {
+    font-size: 1em;
+  }
+}
+
+.user-interaction iframe {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .user-interaction iframe {
+    width: 100%;
+  }
+}
