@@ -299,8 +299,6 @@ section {
 .image-placeholder, .image-graphic {
   width: auto;
   height: auto;
-  background: var(--light-greige);
-  border-radius: var(--border-radius);
 }
 
 .intro-item, .card {
