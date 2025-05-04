@@ -677,6 +677,16 @@ footer {
   text-align: center;
 }
 
+.climate p {
+  padding: inherit;
+}
+
+.intro-climate p {
+  text-align: center;
+  font-size: 1.50rem;
+  padding: 0 1em;
+}
+
 @media (max-width: 700px) {
   .ai-section {
     padding: 2em 0.5em 1.5em 0.5em;
