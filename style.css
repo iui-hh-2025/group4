@@ -44,7 +44,7 @@ h1, h2, h3, p {
 h1 {
   font-size: 5em;
   font-weight: 800;
-  letter-spacing: 4%;
+  letter-spacing: .064em;
   line-height: 1.13;
   text-align: center;
 }
@@ -79,7 +79,7 @@ a {
 nav a, .nav-link {
   font-size: 1.25em;
   font-weight: 500;
-  letter-spacing: 4%;
+  letter-spacing: .064em;
   color: var(--black);
   display: flex;
   align-items: center;
@@ -663,7 +663,6 @@ footer {
 .ai-card h4 {
   font-size: 2em;
   font-weight: 400;
-  line-height: auto;
   color: var(--black);
   margin: 0 auto;
 }
