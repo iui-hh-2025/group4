@@ -728,41 +728,58 @@ footer {
     position: absolute;
     top: 56px;
     right: 0;
+    left: 0;
     background: var(--primary);
     flex-direction: column;
+    align-items: center;
     width: 100vw;
     padding: 1rem 0;
-    height: fit-content;
+    height: auto;
     z-index: 2001;
   }
   .navbar.open .nav-right {
     display: flex;
   }
-  .hamburger {
-    display: flex;
-  }
-  .nav-container {
-    position: relative;
-  }
   .nav-right li {
     width: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
   }
-  .nav-right a {
-    display: block;
+  .nav-right a,
+  .nav-right .nav-link {
+    display: block !important;
     width: 100%;
-    justify-content: flex-start;
-    align-items: flex-start;
+    max-width: 320px;
+    margin: 0.25em 0;
     text-align: center;
-    padding: 1rem 2rem;
-    box-sizing: border-box;
     font-size: 1.25em;
+    font-weight: 600;
+    padding: 1rem 0;
     border-bottom: 1px solid var(--primary-light);
     background: none;
+    color: var(--black);
+    box-sizing: border-box;
+    letter-spacing: 0.05em;
   }
-  .nav-right a:last-child {
+  .nav-right a:last-child,
+  .nav-right .nav-link:last-child {
     border-bottom: none;
+  }
+  .hamburger {
+    display: flex;
+    z-index: 3000;
+  }
+  .nav-container {
+    position: relative;
+  }
+  nav a, .nav-link {
+    display: block !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: auto !important;
+    padding: 1rem 0 !important;
   }
 }
 
