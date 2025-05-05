@@ -322,8 +322,8 @@ section {
 .water-infographic-image {
   border: 8px solid white;
   box-shadow: 0 4px 8px 0 #00000033;
-  width: 75%;
-  margin-right: 1.5em;
+  width: 50%;
+  margin-right: 0 auto;
   margin-bottom: 1em;
 }
 
