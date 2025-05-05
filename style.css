@@ -323,8 +323,9 @@ section {
   border: 8px solid white;
   box-shadow: 0 4px 8px 0 #00000033;
   width: 50%;
-  margin-right: 0 auto;
+  margin-right: 1.5em;
   margin-bottom: 1em;
+  text-align: center;
 }
 
 .cooling-image {
