@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --primary: #AEC09A;
+  --primary: #aec09a;
   --primary-light: #DFE5D7;
   --primary-dark: #435D36;
   --secondary: #217172;
@@ -316,6 +316,14 @@ section {
   box-shadow: 0 4px 8px 0 #00000033;
   width: 50%;
   margin-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+.water-infographic-image {
+  border: 8px solid white;
+  box-shadow: 0 4px 8px 0 #00000033;
+  width: 100%;
+  margin-right: 1.5em;
   margin-bottom: 1em;
 }
 
