@@ -86,8 +86,8 @@ This project was created as part of a course collaboration. For questions or fee
 - Joni Voong
 
 ### Course Instructors
-- Indiana University Faculty
-- Haaga-Helia University Faculty
+- William Helling
+- Angela Murillo
 
 ## License
 
