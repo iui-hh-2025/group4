@@ -1346,16 +1346,19 @@ section.pollution-section .pollution-item p {
 
   .power-image {
   width: 100%;
+  box-sizing: border-box;
   margin: auto auto 1em auto;
   }
 
   .water-image {
   width: 100%;
+  box-sizing: border-box;
   margin: auto auto 1em auto;
   }
 
    .cooling-image {
   width: 100%;
+  box-sizing: border-box;
   margin: auto auto 1em auto;
   }
 }
