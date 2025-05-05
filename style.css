@@ -733,7 +733,7 @@ footer {
     width: 100vw;
     padding: 1rem 0;
     height: fit-content;
-    z-index: 1001;
+    z-index: 2001;
   }
   .navbar.open .nav-right {
     display: flex;
@@ -749,14 +749,17 @@ footer {
     margin: 0;
     padding: 0;
   }
-  .nav-right a, .nav-link {
+  .nav-right a {
+    display: block;
     width: 100%;
     justify-content: flex-start;
+    align-items: flex-start;
     text-align: left;
     padding: 1rem 2rem;
     box-sizing: border-box;
     font-size: 1.5em;
     border-bottom: 1px solid var(--primary-light);
+    background: none;
   }
   .nav-right a:last-child {
     border-bottom: none;
