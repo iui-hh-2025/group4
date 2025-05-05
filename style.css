@@ -754,10 +754,10 @@ footer {
     width: 100%;
     justify-content: flex-start;
     align-items: flex-start;
-    text-align: left;
+    text-align: center;
     padding: 1rem 2rem;
     box-sizing: border-box;
-    font-size: 1.5em;
+    font-size: 1.25em;
     border-bottom: 1px solid var(--primary-light);
     background: none;
   }
