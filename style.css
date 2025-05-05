@@ -1433,12 +1433,14 @@ section.pollution-section .pollution-item p {
   height: 647px;
   display: block;
   margin: 0 auto;
+  border: none
 }
 
 @media (max-width: 600px) {
   .user-interaction iframe {
     height: 400px;
     min-height: 300px;
+    border: none;
   }
 }
 
