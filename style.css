@@ -761,7 +761,6 @@ footer {
     background: none;
     color: var(--black);
     box-sizing: border-box;
-    letter-spacing: 0.05em;
   }
   .nav-right a:last-child,
   .nav-right .nav-link:last-child {
