@@ -621,6 +621,7 @@ footer {
   color: var(--secondary-dark);
   text-align: center;
   line-height: 1.15;
+  letter-spacing: normal;
 }
 
 .hero-secondary p {
@@ -633,6 +634,7 @@ footer {
 @media (max-width: 900px) {
   .hero-secondary h1 {
     font-size: 3em;
+    letter-spacing: normal;
   }
   .hero-secondary .hero-overlay {
     max-width: 95vw;
